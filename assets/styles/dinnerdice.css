@@ -1,0 +1,48 @@
+body{
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+
+.logoImage{
+  padding: 35px;
+  margin-left: 33%;
+}
+
+.col-lg-12{
+  align-content: center;
+  justify-content: center;
+}
+
+.card{
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  /* margin-left: 28%; */
+  border: 4px solid #c12026;
+  padding-top: 15px;
+}
+
+.text{
+  width: 100%;
+  text-align: center;
+}
+
+.enterBTN{
+  width: 100px;
+  height: 45px;
+  border-radius: 20px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer; 
+  border: 2px solid #c12026;
+  float: right;
+  color: #c12026;
+}
+
+.enterBTN:hover{
+  background:black;
+  color: white;
+
+}
+
