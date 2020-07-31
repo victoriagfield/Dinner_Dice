@@ -2,6 +2,35 @@ body{
   background: white;
 }
 
+/*CSS on main content page*/
+.header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 56px;
+  z-index: 1;
+}
+
+h1{
+  font-family: 'Lobster', cursive;
+  font-size: 55px;
+  text-align: center;
+  background-color: #2d2f2d;
+  color: #c12026;
+}
+
+.footer{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  padding: 7px;
+  background-color: #2d2f2d;
+  color: #c12026;
+}
+
 .logoImage{
   padding: 35px;
 }
