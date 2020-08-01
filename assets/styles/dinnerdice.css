@@ -1,3 +1,4 @@
+/*body for both pages*/
 body{
   background: white;
 }
@@ -10,6 +11,7 @@ body{
   left: 0;
   height: 56px;
   z-index: 1;
+  overflow: none;
 }
 
 h1{
