@@ -27,7 +27,7 @@ h1{
   right: 0;
   left: 0;
   bottom: 0;
-  height: 70px;
+  height: 60px;
   padding: 7px;
   background-color: #2d2f2d;
   color: #c12026;
@@ -64,6 +64,10 @@ h1{
   background: #0b0c0b;
   color: white;
   border: 2px solid #c12026;
+}
+
+.container-drink{
+  margin-bottom: 95px;
 }
 
 /*Main Page*/
