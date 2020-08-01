@@ -31,13 +31,23 @@ h1{
   color: #c12026;
 }
 
+.card-w-75{
+  margin-top: 20%;
+  border: 2px solid #c12026;
+}
+
+.card2-w-75{
+  border: 2px solid #c12026;
+}
+
+/*Main Page*/
 .logoImage{
   padding: 35px;
   display: block;
   margin: auto;
 }
 
-.card{
+.cardPage1{
   background-color: white;
   border: 4px solid #c12026;
   padding-top: 15px;
