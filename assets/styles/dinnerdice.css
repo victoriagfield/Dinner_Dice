@@ -64,6 +64,9 @@ h1{
   border: 2px solid #c12026;
   color: #c12026;
   background: white;
+  display: block;
+  width: 50%;
+  margin: auto;
 }
 
 .btn-primary:hover{
@@ -123,7 +126,6 @@ h1{
 
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
-
   .card-w-75{
     margin-top: 95px;
   }
