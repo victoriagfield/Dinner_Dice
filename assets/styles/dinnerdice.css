@@ -32,11 +32,35 @@ h1{
 }
 
 .card-w-75{
-  margin-top: 20%;
+  margin-top: 15%;
   border: 2px solid #c12026;
+  width: 40%;
+  margin-left: 5%;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 3px;
 }
 
 .card2-w-75{
+  margin-top: 10px;
+  border: 2px solid #c12026;
+  width: 40%;
+  margin-left: 5%;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 3px;
+}
+
+.btn-primary{
+  margin-top: 15px;
+  text-align: center;
+  border-radius: 20px;
+  border: 2px solid #c12026;
+  color: #c12026;
+  background: white;
+}
+
+.btn-primary:hover{
+  background: #0b0c0b;
+  color: white;
   border: 2px solid #c12026;
 }
 
@@ -45,12 +69,15 @@ h1{
   padding: 35px;
   display: block;
   margin: auto;
+  margin-top: 5%;
 }
 
 .cardPage1{
   background-color: white;
   border: 4px solid #c12026;
   padding-top: 15px;
+  margin-top: 15px;
+  box-shadow: 4px 4px 10px 3px;
 }
 
 .text{
@@ -78,6 +105,7 @@ h1{
 .enterBTN:hover{
   background: #0b0c0b;
   color: white;
+  border: 2px solid #c12026;
 }
 
 
