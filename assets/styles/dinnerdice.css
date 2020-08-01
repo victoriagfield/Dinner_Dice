@@ -1,6 +1,7 @@
 /*body for both pages*/
 body{
   background: white;
+  background-image: url(../images/shutterstock_740473780.jpg);
 }
 
 /*CSS on main content page*/
@@ -42,6 +43,7 @@ h1{
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
   font-family: 'Red Rose', cursive;
+  background: white;
 }
 
 .card2-w-75{
@@ -52,6 +54,7 @@ h1{
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
   font-family: 'Red Rose', cursive;
+  background: white;
 }
 
 .btn-primary{
