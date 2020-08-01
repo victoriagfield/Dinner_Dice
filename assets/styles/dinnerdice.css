@@ -31,6 +31,7 @@ h1{
   padding: 7px;
   background-color: #2d2f2d;
   color: #c12026;
+  overflow: none;
 }
 
 .card-w-75{
@@ -40,6 +41,7 @@ h1{
   margin-left: 5%;
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
+  font-family: 'Red Rose', cursive;
 }
 
 .card2-w-75{
@@ -49,6 +51,7 @@ h1{
   margin-left: 5%;
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
+  font-family: 'Red Rose', cursive;
 }
 
 .btn-primary{
@@ -87,6 +90,7 @@ h1{
   padding-top: 15px;
   margin-top: 15px;
   box-shadow: 4px 4px 10px 3px;
+  font-family: 'Red Rose', cursive;
 }
 
 .text{
@@ -117,6 +121,9 @@ h1{
   border: 2px solid #c12026;
 }
 
-
-
-
+/*media section for max width 770px*/
+@media screen and (max-width: 1050px) {
+  .card-w-75{
+    margin-top: 95px;
+  }
+}
