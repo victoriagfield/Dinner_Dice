@@ -33,12 +33,12 @@ h1{
 
 .logoImage{
   padding: 35px;
+  display: block;
+  margin: auto;
 }
 
 .card{
-  position: absolute;
   background-color: white;
-  width: 40%;
   border: 4px solid #c12026;
   padding-top: 15px;
 }
@@ -60,11 +60,15 @@ h1{
   border: 2px solid #c12026;
   color: #c12026;
   font-family: 'Cabin', sans-serif;
+  display: block;
+  margin: auto;
+  
 }
 
 .enterBTN:hover{
   background: #0b0c0b;
   color: white;
-
 }
+
+
 
