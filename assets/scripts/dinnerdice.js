@@ -1,5 +1,5 @@
 var drinkVodka = document.querySelector("#radioVodka");
-var drinkWhiskey = document.querySelector("#radioBrandy");
+var drinkBrandy = document.querySelector("#radioBrandy");
 var drinkTequlia = document.querySelector("#radioTequila");
 var drinkRum = document.querySelector("#radioRum");
 var drinkGin = document.querySelector("#radioGin");
@@ -74,8 +74,9 @@ foodBtn.addEventListener("click", function(){
           url: queryURL,
           method: "GET"
         }).then(function(response) {
-            var mealID = response.idMeal;
+            var mealID = response[(Math.floor(Math.random() * response.length))].idMeal;
             var mealName = response.strMeal;
+            console.log = mealID;
 
         });
 })
