@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&family=Red+Rose&family=Rowdies:wght@300&display=swap" rel="stylesheet"> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&family=Red+Rose&family=Rowdies:wght@300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./assets/styles/dinnerdice.css">
 </head>
 
@@ -28,12 +30,19 @@
           <div class="card-w-75" style="padding-bottom: 50px;">
             <div class="card-body">
               <h5 class="card-title">What do you want to eat?</h5>
-              <label class="option"><input type="radio" name="option" value="1" /> <span id="radioChicken"> Chicken</span></label><br>
-              <label class="option"><input type="radio" name="option" value="1" /> <span id="radioBeef"> Beef</span></label><br>
-              <label class="option"><input type="radio" name="option" value="1" /> <span id="radioSeafood"> Seafood</span></label><br>
-              <label class="option"><input type="radio" name="option" value="1" /> <span id="radioVegetarian"> Vegetarian</span></label><br>
-              <label class="option"><input type="radio" name="option" value="1" /> <span id="radioVegan"> Vegan</span></label><br>
-              <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnFood" type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the dinner dice </button>
+              <label class="option"><input type="radio" name="option" value="1" id="radioChicken" /> <span>
+                  Chicken</span></label><br>
+              <label class="option"><input type="radio" name="option" value="1" id="radioBeef" /> <span>
+                  Beef</span></label><br>
+              <label class="option"><input type="radio" name="option" value="1" id="radioSeafood" /> <span>
+                  Seafood</span></label><br>
+              <label class="option"><input type="radio" name="option" value="1" id="radioVegetarian" /> <span>
+                  Vegetarian</span></label><br>
+              <label class="option"><input type="radio" name="option" value="1" id="radioVegan" /> <span>
+                  Vegan</span></label><br>
+              <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnFood"
+                type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the dinner dice
+              </button>
             </div>
           </div>
         </div>
@@ -51,12 +60,19 @@
             <div class="card2-w-75" style="padding-bottom: 50px;">
               <div class="card-body">
                 <h5 class="card-title">Pick your poison: </h5>
-                <label class="option"><input type="radio" name="option" value="1" /> <span id="radioVodka"> Vodka</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" /> <span id="radioWhiskey"> Whiskey</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" /> <span id="radioTequila"> Tequila</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" /> <span id="radioRum"> Rum</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" /> <span id="radioGin"> Gin</span></label><br>
-                <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnDrink" type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the drink dice</button>
+                <label class="option"><input type="radio" name="option" value="1" id="radioVodka" /> <span>
+                    Vodka</span></label><br>
+                <label class="option"><input type="radio" name="option" value="1" id="radioWhiskey" /> <span>
+                    Whiskey</span></label><br>
+                <label class="option"><input type="radio" name="option" value="1" id="radioTequila" /> <span>
+                    Tequila</span></label><br>
+                <label class="option"><input type="radio" name="option" value="1" id="radioRum" /> <span>
+                    Rum</span></label><br>
+                <label class="option"><input type="radio" name="option" value="1" id="radioGin" /> <span>
+                    Gin</span></label><br>
+                <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnDrink"
+                  type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the drink
+                  dice</button>
               </div>
             </div>
           </div>
@@ -71,26 +87,27 @@
       </div>
     </div>
 
-     <!-- Modal window -->
-  <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header bg-success text-light">
-          <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <!--Recipe(s) from API will go here-->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    <!-- Modal window -->
+    <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-success text-light">
+            <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!--Recipe(s) from API will go here-->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-    
+
 
     <div class="footer">
       <div class="text-center"><i class='fas fa-dice' style='font-size:48px;color:#c12026'></i> Maybe keep a footer,
