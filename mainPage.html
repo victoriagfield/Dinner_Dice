@@ -46,84 +46,103 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-6">
           <div class="card-w-75" style="padding-bottom: 50px; display: none;">
-            <div class="card-body">
+            <div id="recipeResults" class="card-body">
               <!-- JS will generate HTML here -->
             </div>
           </div>
         </div>
       </div>
-      <div class="container-drink">
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="card2-w-75" style="padding-bottom: 50px;">
-              <div class="card-body">
-                <h5 class="card-title">Pick your poison: </h5>
-                <label class="option"><input type="radio" name="option" value="1" id="radioVodka" /> <span>
-                    Vodka</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" id="radioWhiskey" /> <span>
-                    Whiskey</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" id="radioTequila" /> <span>
-                    Tequila</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" id="radioRum" /> <span>
-                    Rum</span></label><br>
-                <label class="option"><input type="radio" name="option" value="1" id="radioGin" /> <span>
-                    Gin</span></label><br>
-                <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnDrink"
-                  type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the drink
-                  dice</button>
-              </div>
-            </div>
+    </div>
+  </div>
+
+  <!--Drinks Section-->
+  <div class="container-drink">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="card2-w-75" style="padding-bottom: 50px;">
+          <div class="card-body">
+            <h5 class="card-title">Pick your poison: </h5>
+            <label class="option"><input type="radio" name="option" value="1" id="radioVodka" /> <span>
+                Vodka</span></label><br>
+            <label class="option"><input type="radio" name="option" value="1" id="radioWhiskey" /> <span>
+                Whiskey</span></label><br>
+            <label class="option"><input type="radio" name="option" value="1" id="radioTequila" /> <span>
+                Tequila</span></label><br>
+            <label class="option"><input type="radio" name="option" value="1" id="radioRum" /> <span>
+                Rum</span></label><br>
+            <label class="option"><input type="radio" name="option" value="1" id="radioGin" /> <span>
+                Gin</span></label><br>
+            <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnDrink"
+              type="submit"><i class='fas fa-dice' style='font-size:35px;color:#c12026'></i> Roll the drink
+              dice</button>
           </div>
-          <div class="col-lg-6">
-            <div class="card2-w-75" style="padding-bottom: 50px; display: none;">
-              <div class="card-body">
-                <!-- JS will generate HTML here -->
-              </div>
-            </div>
+        </div>
+      </div>
+
+      <!--Recipe Results Card-->
+      <div class="col-lg-6">
+        <div class="card2-w-75" style="padding-bottom: 50px; display: none;">
+          <div id="drinksResults class=" card-body">
+            <!-- JS will generate HTML here -->
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Modal window -->
-    <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header bg-success text-light">
-            <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <!--Recipe(s) from API will go here-->
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+  <!--Drinks Result Card-->
+  <div class="col-lg-6">
+    <div class="card2-w-75" style="padding-bottom: 50px; display: none;">
+      <div id="drinkResults" class="card-body">
+        <!-- JS will generate HTML here -->
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+
+  <!-- Modal window -->
+  <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-success text-light">
+          <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!--Recipe(s) from API will go here-->
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="close-btn class=" btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
+  </div>
 
 
-    <div class="footer">
-      <div class="text-center"><i class='fas fa-dice' style='font-size:48px;color:#c12026'></i> Maybe keep a footer,
-        maybe
-        not? <i class='fas fa-dice' style='font-size:48px;color:#c12026'></i></div>
-    </div>
+  <div class="footer">
+    <div class="text-center"><i class='fas fa-dice' style='font-size:48px;color:#c12026'></i> Maybe keep a footer,
+      maybe
+      not? <i class='fas fa-dice' style='font-size:48px;color:#c12026'></i></div>
+  </div>
 
 
 
 
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-    <script src="assets/scripts/dinnerdice.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="assets/scripts/dinnerdice.js"></script>
 </body>
 
 </html>
