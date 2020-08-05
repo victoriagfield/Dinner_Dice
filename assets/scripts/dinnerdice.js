@@ -42,6 +42,5 @@ drinkBtn.addEventListener("click", function(){
         }).then(function(response) {
             var mealID = response.idMeal;
             var mealName = response.strMeal;
-
         });
 })
