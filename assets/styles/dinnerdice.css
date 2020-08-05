@@ -104,7 +104,12 @@ h1{
   font-size: 18px;
 }
 
-.enterBTN{
+
+.enterBTN:hover{
+  animation: rotation 2s infinite linear;
+}
+
+/*.enterBTN{
   width: 100px;
   height: 45px;
   border-radius: 20px;
@@ -116,14 +121,7 @@ h1{
   font-family: 'Cabin', sans-serif;
   display: block;
   margin: auto;
-  
-}
-
-.enterBTN:hover{
-  background: #0b0c0b;
-  color: white;
-  border: 2px solid #c12026;
-}
+}*/
 
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
@@ -131,3 +129,12 @@ h1{
     margin-top: 95px;
   }
 }
+
+/* Animations */
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}}
