@@ -105,7 +105,6 @@ h1{
   margin-top: 10px;
   border: 2px solid #c12026;
   width: 50%;
-  height: 97%;
   margin-right: 45%;
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
@@ -155,6 +154,10 @@ h1{
 }
 
 /*Main Page*/
+.enterBTN:hover{
+  animation: rotation 1.5s infinite linear;
+}
+
 .logoImage{
   padding: 35px;
   display: block;
@@ -178,30 +181,18 @@ h1{
   font-size: 18px;
 }
 
-.enterBTN{
-  width: 100px;
-  height: 45px;
-  border-radius: 20px;
-  margin: 10px;
-  font-size: 20px;
-  cursor: pointer; 
-  border: 2px solid #c12026;
-  color: #c12026;
-  font-family: 'Cabin', sans-serif;
-  display: block;
-  margin: auto;
-  
-}
-
-.enterBTN:hover{
-  background: #0b0c0b;
-  color: white;
-  border: 2px solid #c12026;
-}
-
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
   .card-w-75{
     margin-top: 95px;
   }
 }
+
+/* Animation for Enter Btn */
+@keyframes rotation {
+from {
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(359deg);
+}}
