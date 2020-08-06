@@ -1,5 +1,5 @@
 # Dinner Dice
-https://victoriagfield.github.io/Dinner_Dice/
+https://victoriagfield.github.io/Dinner_Dice
 
 ### Objective: 
 
