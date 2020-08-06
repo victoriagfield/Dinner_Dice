@@ -49,15 +49,21 @@ drinkBtn.addEventListener("click", function(){
             $.ajax({
                 url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + drinkName,
                 method: "GET"
-              }).then(function(response) {//response.drinks.strDrinkThumb,
-                $("#drinkResults").html("<figure> <img src = " + response.drinks[0].strDrinkThumb + "/preview" + ">" + "<figcaption>" + drinkName + "</figcaption> </figure>");
-                console.log(this);
+              }).then(function(data) {//response.drinks.strDrinkThumb,
+                $("#drinkResults").html("<figure> <img src = " + data.drinks[0].strDrinkThumb + "/preview" + ">" + "<figcaption>" + drinkName + "</figcaption> </figure> <br> <button id = 'ingredBtn'> Click Here for Ingredients </button>");
+
+                ingredCall();
+                
                 
               });
         });
         
 })
+$("#ingredBtn").on('click', function ingredCall(){
 
+                    $("#recipeModal").html();
+                    $("#modal-body").html(response.strInstructions)
+                })
 
 foodBtn.addEventListener("click", function(){
     var option = "";
