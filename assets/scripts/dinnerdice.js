@@ -67,7 +67,7 @@ foodBtn.addEventListener("click", function(){
     else if(mealBeef.checked){
         option = "Beef";
     }
-    else if(mealSeafood.checked){
+    else if(mealPork.checked){
         option = "Pork";
     }
     else if(mealVegan.checked){
