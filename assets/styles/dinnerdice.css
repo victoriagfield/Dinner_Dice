@@ -36,22 +36,25 @@ h1{
   overflow: none;
 }
 
-.card-w-75{
+/*styling for the food options card*/
+.cardFood-w-75{
   margin-top: 15%;
   border: 2px solid #c12026;
   width: 50%;
-  margin-left: 5%;
+  margin-left: 45%;
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
   font-family: 'Red Rose', cursive;
   background: white;
+  
 }
 
-.card2-w-75{
+/*styling for the drink options card*/
+.cardDrink-w-75{
   margin-top: 10px;
   border: 2px solid #c12026;
   width: 50%;
-  margin-left: 5%;
+  margin-left: 45%;
   padding: 10px;
   box-shadow: 4px 4px 10px 3px;
   font-family: 'Red Rose', cursive;
@@ -80,6 +83,37 @@ h1{
   margin-bottom: 95px;
 }
 
+.card-body-results{
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+/*Styling for the results cards*/
+.card-w-75{
+  margin-top: 15%;
+  border: 2px solid #c12026;
+  width: 50%;
+  margin-right: 45%;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 3px;
+  font-family: 'Red Rose', cursive;
+  background: white;
+}
+
+.card2-w-75{
+  margin-top: 10px;
+  border: 2px solid #c12026;
+  width: 50%;
+  height: 97%;
+  margin-right: 45%;
+  padding: 10px;
+  box-shadow: 4px 4px 10px 3px;
+  font-family: 'Red Rose', cursive;
+  background: white;
+}
+
+/*pupup modal with recipe*/
 .modal {
   display: none;
   position: fixed; 
