@@ -25,7 +25,6 @@ h1{
 }
 
 .footer{
-  position: fixed;
   right: 0;
   left: 0;
   bottom: 0;
@@ -99,7 +98,6 @@ h1{
   box-shadow: 4px 4px 10px 3px;
   font-family: 'Red Rose', cursive;
   background: white;
-  height: 70%;
 }
 
 .card2-w-75{
@@ -113,7 +111,7 @@ h1{
   background: white;
 }
 
-/*pupup modal with recipe*/
+/*popup modal with recipe*/
 .modal {
   display: none;
   position: fixed; 
