@@ -107,21 +107,8 @@ h1{
 
 .enterBTN:hover{
   animation: rotation 2s infinite linear;
+  animation-fill-mode: forwards;
 }
-
-/*.enterBTN{
-  width: 100px;
-  height: 45px;
-  border-radius: 20px;
-  margin: 10px;
-  font-size: 20px;
-  cursor: pointer; 
-  border: 2px solid #c12026;
-  color: #c12026;
-  font-family: 'Cabin', sans-serif;
-  display: block;
-  margin: auto;
-}*/
 
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
