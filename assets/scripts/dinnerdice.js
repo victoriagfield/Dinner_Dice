@@ -59,7 +59,7 @@ drinkBtn.addEventListener("click", function () {
 
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
-                $("#modal-body").text(response.drinks[0].strInstructions);
+                $("#modalText").text(data.drinks[0].strInstructions);
             });
         });
     });
