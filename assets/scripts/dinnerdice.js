@@ -49,6 +49,7 @@ drinkBtn.addEventListener("click", function () {
         $.ajax({
             url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + drinkName,
             method: "GET"
+            //url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + "Kool-Aid%20Shot"
         }).then(function (data) {//response.drinks.strDrinkThumb,
             $("#drinkResults").html("<figure> <img src = " + data.drinks[0].strDrinkThumb + "/preview" + ">" + "<figcaption>" + drinkName + "</figcaption> </figure>");
             var btnView = $('<button>').addClass('btn btn-sm btn-primary');
@@ -71,11 +72,13 @@ drinkBtn.addEventListener("click", function () {
                      
                     }
                     //Our Problem
-                    if(drinkM == null || drinkM == ""){
-                        drinkM.replace(null, 'Dealers choice of');
+                    if((drinkM == null || drinkM == "") && drinkI.length > 0){
+                        drinkM = "Dealers choice of";
                     }
-                    //
-                    $("#ingredientsText").append(data.drinks[0][`strMeasure${i}`] + ' ' + data.drinks[0][`strIngredient${i}`]);
+                    if((drinkM == null) && drinkI.length == 0){
+                        drinkM = "";
+                    }
+                    $("#ingredientsText").append(drinkM + ' ' + drinkI);
                     $("#ingredientsText").append("<br>");
                 }
             });
