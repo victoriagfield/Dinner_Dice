@@ -60,6 +60,24 @@ drinkBtn.addEventListener("click", function () {
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
                 $("#modalText").text(data.drinks[0].strInstructions);
+                $("#ingredientsText").text(" ");
+                for(var i = 1; i <= 15; i++){
+
+                    var drinkM = data.drinks[0][`strMeasure${i}`]
+                    var drinkI = data.drinks[0][`strIngredient${i}`]
+                    console.log();
+                    if(data.drinks[0][`strIngredient${i}`] == null || data.drinks[0][`strIngredients${i}`] == ''){
+                        break;
+                     
+                    }
+                    //Our Problem
+                    if(drinkM == null || drinkM == ""){
+                        drinkM.replace(null, 'Dealers choice of');
+                    }
+                    //
+                    $("#ingredientsText").append(data.drinks[0][`strMeasure${i}`] + ' ' + data.drinks[0][`strIngredient${i}`]);
+                    $("#ingredientsText").append("<br>");
+                }
             });
         });
     });
