@@ -35,6 +35,7 @@ drinkBtn.addEventListener("click", function () {
         option = "Gin";
     }
     console.log(option);
+    
 
     var queryURL = "https://www.thecocktaildb.com/api/json/v2/9973533/filter.php?i=" + option;
     console.log(queryURL);
@@ -57,6 +58,7 @@ drinkBtn.addEventListener("click", function () {
             btnView.attr('data-toggle', 'modal');
             btnView.attr('data-target', '#recipeModal');
             $("#drinkResults").append(btnView);
+            
 
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
@@ -84,6 +86,7 @@ drinkBtn.addEventListener("click", function () {
             });
         });
     });
+    $(".card2-w-75").removeClass("d-none");
 });
 
 foodBtn.addEventListener("click", function () {
@@ -155,4 +158,5 @@ foodBtn.addEventListener("click", function () {
         });
 
     });
+    $(".card-w-75").removeClass("d-none");
 })
