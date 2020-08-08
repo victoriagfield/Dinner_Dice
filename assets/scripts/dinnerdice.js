@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var drinkVodka = document.querySelector("#radioVodka");
 var drinkBrandy = document.querySelector("#radioBrandy");
 var drinkTequlia = document.querySelector("#radioTequila");
@@ -182,3 +183,4 @@ foodBtn.addEventListener("click", function () {
     });
     $(".card-w-75").removeClass("d-none");
 })
+});
