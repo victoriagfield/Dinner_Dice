@@ -49,7 +49,7 @@ drinkBtn.addEventListener("click", function () {
         $.ajax({
             url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + drinkName,
             method: "GET"
-            //url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + "Kool-Aid%20Shot"
+            //url: "https://www.thecocktaildb.com/api/json/v2/9973533/search.php?s=" + "Kool-Aid%20Shot"//
         }).then(function (data) {//response.drinks.strDrinkThumb,
             $("#drinkResults").html("<figure> <img src = " + data.drinks[0].strDrinkThumb + "/preview" + ">" + "<figcaption>" + drinkName + "</figcaption> </figure>");
             var btnView = $('<button>').addClass('btn btn-sm btn-primary');
@@ -114,12 +114,13 @@ foodBtn.addEventListener("click", function () {
     }).then(function (response) {
         var randomIndex = Math.floor(Math.random() * response.meals.length)
         var mealName = response.meals[randomIndex].strMeal;
+        console.log(mealName);
         $.ajax({
             url: "https://www.themealdb.com/api/json/v2/9973533/search.php?s=" + mealName,
             method: "GET"
         }).then(function (response) {
             $("#recipeResults").html("<figure> <img src = " + response.meals[0].strMealThumb + "/preview" + ">" + "<figcaption>" + mealName + "</figcaption> </figure>");
-            console.log(this);
+            //console.log(this);
             var btnView = $('<button>').addClass('btn btn-sm btn-primary');
             btnView.text("Click to see the recipe");
             btnView.attr('data-toggle', 'modal');
@@ -129,6 +130,26 @@ foodBtn.addEventListener("click", function () {
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
                 $("#modalText").text(response.meals[0].strInstructions);
+                $("#ingredientsText").text(" ");
+                for(var i = 1; i<= 15; i++){
+
+                    var mealM = response.meals[0][`strMeasure${i}`]
+                    var mealI = response.meals[0][`strIngredient${i}`]
+                    console.log();
+                    if(response.meals[0][`strIngredient${i}`] == null || response.meals[0][`strIngredients${i}`] == ''){
+                        break;
+                     
+                    }
+                    //Our Problem
+                    if((mealM == null || mealM == "") && mealI.length > 0){
+                        mealM = "Dealers choice of";
+                    }
+                    if((mealM == null) && mealI.length == 0){
+                        mealM = "";
+                    }
+                    $("#ingredientsText").append(mealM + ' ' + mealI);
+                    $("#ingredientsText").append("<br>");
+                }
             });
 
         });
