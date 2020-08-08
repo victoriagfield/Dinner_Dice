@@ -15,14 +15,13 @@
 </head>
 
 <body>
-
+  <!--Header section with our app name-->
   <header class="header" id="headerBar">
     <h1><i class='fas fa-dice' style='font-size:48px;color:#c12026'></i> Dinner Dice <i class='fas fa-dice'
         style='font-size:48px;color:#c12026'></i></h1>
-    </h>
-    </h1>
   </header>
 
+  <!--Food option cards-->
   <div class="container-recipes">
     <div class="container-food">
       <div class="row">
@@ -41,12 +40,14 @@
               <label><input type="radio" name="food" value="1" id="radioVegan" /> <span>
                   Vegan</span></label><br>
               <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnFood"
-                type="submit"><i class='fas fa-dice-five mr-2' style='font-size:35px;color:#c12026'></i> Roll the dinner dice<i class='fas fa-dice-five ml-2' style='font-size:35px;color:#c12026'></i></button>
+                type="submit"><i class='fas fa-dice-five mr-2' style='font-size:35px;color:#c12026'></i> Roll the dinner
+                dice<i class='fas fa-dice-five ml-2' style='font-size:35px;color:#c12026'></i></button>
               </button>
             </div>
           </div>
         </div>
 
+        <!--Food results card-->
         <div class="col-lg-6">
           <div class="card-w-75 d-none" style="padding-bottom: 50px;">
             <div id="recipeResults" class="card-body-results">
@@ -67,7 +68,7 @@
             <h5 class="card-title">Pick your poison: </h5>
             <label><input type="radio" name="drink" value="1" id="radioVodka" /> <span>
                 Vodka</span></label><br>
-            <label><input type="radio" name="drink" value="1" id="radioBrandy"/> <span>
+            <label><input type="radio" name="drink" value="1" id="radioBrandy" /> <span>
                 Brandy</span></label><br>
             <label><input type="radio" name="drink" value="1" id="radioTequila" /> <span>
                 Tequila</span></label><br>
@@ -76,56 +77,58 @@
             <label><input type="radio" name="drink" value="1" id="radioGin" /> <span>
                 Gin</span></label><br>
             <button class="btn btn-primary d-flex justify-content-center align-items-center" id="btnDrink"
-              type="submit"><i class='fas fa-dice-five mr-2' style='font-size:35px;color:#c12026'></i> Roll the drink dice<i class='fas fa-dice-five ml-2' style='font-size:35px;color:#c12026'></i></button></button>
+              type="submit"><i class='fas fa-dice-five mr-2' style='font-size:35px;color:#c12026'></i> Roll the drink
+              dice<i class='fas fa-dice-five ml-2' style='font-size:35px;color:#c12026'></i></button></button>
           </div>
         </div>
       </div>
 
-      
 
-  <!--Drinks Result Card-->
-  <div class="col-lg-6">
-    <div class="card2-w-75 d-none" style="padding-bottom: 50px;">
-      <div id="drinkResults" class="card-body-results">
-        <!-- JS will generate HTML here -->
+
+      <!--Drinks Result Card-->
+      <div class="col-lg-6">
+        <div class="card2-w-75 d-none" style="padding-bottom: 50px;">
+          <div id="drinkResults" class="card-body-results">
+            <!-- JS will generate HTML here -->
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
 
-  </div>
+    </div>
   </div>
 
 
   <!-- Modal window -->
   <div class="modal fade" id="recipeModal" tabindex="-1" role="dialog" aria-labelledby="recipeModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
-        <button type="button" id="copy-btn" class=" btn btn-secondary">
-           Copy to clipboard</button>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">  &times;  </span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p id="modalText">
-     <!--Recipe(s) from API will go here-->
-        </p>
-        <p id="ingredientsText">
-      <!--Ingredients from API will go here-->
-        </p>
-      </div>
-      <div class="modal-footer">
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="recipeModalLabel">Recipe: </h5>
+          <button type="button" id="copy-btn" class=" btn btn-secondary">
+            Copy to clipboard</button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"> &times; </span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="modalText">
+            <!--Recipe(s) from API will go here-->
+          </p>
+          <p id="ingredientsText">
+            <!--Ingredients from API will go here-->
+          </p>
+        </div>
+        <div class="modal-footer">
+        </div>
       </div>
     </div>
   </div>
-</div>
 
-
+  <!--footer section-->
   <div class="footer">
-    <div class="text-center"><i class='fas fa-dice' style='font-size:48px;color:#c12026'></i> Enjoy your meal!<i class='fas fa-dice' style='font-size:48px;color:#c12026'></i></div>
+    <div class="text-center"><i class='fas fa-dice ' style='font-size:48px;color:#c12026'> </i> Enjoy your meal! <i
+        class=' fas fa-dice' style='font-size:48px;color:#c12026'></i></div>
   </div>
 
 
@@ -134,8 +137,8 @@
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
   <script src="assets/scripts/dinnerdice.js"></script>
 </body>
 
