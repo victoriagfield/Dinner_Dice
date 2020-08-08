@@ -123,8 +123,7 @@ h1{
 .modal-content {
   position: relative; 
   background-color: white;
-  padding: 10px; 
-  width: 100%;  
+  width: 550px;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
@@ -139,20 +138,23 @@ h1{
 
 .close{
   color: white;
+  padding: 50px;
+
 }
 
 .close:hover{
   color: #c12026;
 }
 
-.close-btn {
-  float: right; 
-  color: lightgray; 
-  font-size: 24px;  
-  font-weight: bold;
+#copy-btn {
+  margin-left: 50%;
+  background-color: white;
+  color: #c12026;
+  border: 2px solid #c12026;
+  border-radius: 20px;
 }
-.close-btn:hover {
-  color: darkgray;
+#copy-btn:hover {
+  background: darkgray;
 }
 
 @-webkit-keyframes animatetop {
