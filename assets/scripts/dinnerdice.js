@@ -89,19 +89,11 @@ drinkBtn.addEventListener("click", function () {
             });
             $("#copy-btn").click(function() {
                 var concat = $("#modalText").text() + " " + $("#ingredientsText").text();
-               console.log(concat);
-
                 var textarea = $("<textarea>");
                 textarea.val(concat);
-
-                console.log(textarea.val());
-                
                 $(".modal-body").append(textarea);
                 textarea.select();
                 document.execCommand("copy");
-
-
-                
                 textarea.remove();
             });
         });
@@ -174,6 +166,15 @@ foodBtn.addEventListener("click", function () {
                     $("#ingredientsText").append("<br>");
                 }
                 
+            });
+            $("#copy-btn").click(function() {
+                var concat = $("#modalText").text() + " " + $("#ingredientsText").text();
+                var textarea = $("<textarea>");
+                textarea.val(concat);
+                $(".modal-body").append(textarea);
+                textarea.select();
+                document.execCommand("copy");
+                textarea.remove();
             });
 
         });
