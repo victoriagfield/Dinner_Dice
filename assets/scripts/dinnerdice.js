@@ -11,6 +11,7 @@ var mealVegan = document.querySelector("#radioVegan");
 var mealVegetarian = document.querySelector("#radioVegetarian");
 
 
+
 var foodBtn = document.querySelector("#btnFood");
 var drinkBtn = document.querySelector("#btnDrink");
 
@@ -82,7 +83,26 @@ drinkBtn.addEventListener("click", function () {
                     }
                     $("#ingredientsText").append(drinkM + ' ' + drinkI);
                     $("#ingredientsText").append("<br>");
+
+                    
                 }
+            });
+            $("#copy-btn").click(function() {
+                var concat = $("#modalText").text() + " " + $("#ingredientsText").text();
+               console.log(concat);
+
+                var textarea = $("<textarea>");
+                textarea.val(concat);
+
+                console.log(textarea.val());
+                
+                $(".modal-body").append(textarea);
+                textarea.select();
+                document.execCommand("copy");
+
+
+                
+                textarea.remove();
             });
         });
     });
@@ -153,6 +173,7 @@ foodBtn.addEventListener("click", function () {
                     $("#ingredientsText").append(mealM + ' ' + mealI);
                     $("#ingredientsText").append("<br>");
                 }
+                
             });
 
         });
