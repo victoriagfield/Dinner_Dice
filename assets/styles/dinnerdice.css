@@ -1,7 +1,6 @@
 /*body for both pages*/
 body{
   background: #f1eef1;
-  /* background-image: url(../images/shutterstock_740473780.jpg); */
   
 }
 
@@ -234,8 +233,19 @@ h1{
   }
 }
 
-@media (max-width: 800px){
+@media screen and (max-width: 800px){
   .container-fluid{
     width: 90%;
   }
+}
+
+@media screen and (max-width: 500px){
+
+  .modal-content {
+    position: relative;
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+
+   
 }
