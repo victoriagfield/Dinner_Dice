@@ -203,6 +203,10 @@ h1{
   font-size: 18px;
 }
 
+.container-fluid{
+  width: 40%;
+}
+
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
   .cardFood-w-75{
@@ -227,5 +231,11 @@ h1{
   }
   .modal-content{
     margin-top: 75px;
+  }
+}
+
+@media (max-width: 800px){
+  .container-fluid{
+    width: 90%;
   }
 }
