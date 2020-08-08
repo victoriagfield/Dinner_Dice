@@ -18,6 +18,10 @@ WHEN I search without using any specific criteria <br>
 THEN I receive a completely random dining option <br>
 
 ### App Images: 
+![index](https://user-images.githubusercontent.com/66035385/89718304-8ac3f100-d98b-11ea-9dc8-68069b0f0ca0.jpg)
+![main1](https://user-images.githubusercontent.com/66035385/89718305-8c8db480-d98b-11ea-8295-4df6779d1fe8.jpg)
+![results](https://user-images.githubusercontent.com/66035385/89718306-8e577800-d98b-11ea-804b-cdf0e8a07d06.jpg)
+![modal](https://user-images.githubusercontent.com/66035385/89718307-8f88a500-d98b-11ea-991b-5b23966d9bf5.jpg)
 
 
 ##### Developers:
