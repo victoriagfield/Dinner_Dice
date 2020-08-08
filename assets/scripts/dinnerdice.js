@@ -1,3 +1,4 @@
+$(document).ready(function () {
 var drinkVodka = document.querySelector("#radioVodka");
 var drinkBrandy = document.querySelector("#radioBrandy");
 var drinkTequlia = document.querySelector("#radioTequila");
@@ -59,8 +60,7 @@ drinkBtn.addEventListener("click", function () {
             btnView.attr('data-toggle', 'modal');
             btnView.attr('data-target', '#recipeModal');
             $("#drinkResults").append(btnView);
-            
-
+            btnView.on("click", function () {
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
                 $("#modalText").text(data.drinks[0].strInstructions);
@@ -96,10 +96,13 @@ drinkBtn.addEventListener("click", function () {
                 document.execCommand("copy");
                 textarea.remove();
             });
-        });
+        
     });
     $(".card2-w-75").removeClass("d-none");
+
 });
+});
+})
 
 foodBtn.addEventListener("click", function () {
     var option = "";
@@ -141,7 +144,7 @@ foodBtn.addEventListener("click", function () {
             btnView.attr('data-toggle', 'modal');
             btnView.attr('data-target', '#recipeModal');
             $("#recipeResults").append(btnView);
-
+            btnView.on("click", function () {
             $('#recipeModal').on('show.bs.modal', function (event) {
                 var button = $(event.relatedTarget);
                 $("#modalText").text(response.meals[0].strInstructions);
@@ -178,7 +181,8 @@ foodBtn.addEventListener("click", function () {
             });
 
         });
-
+    
     });
     $(".card-w-75").removeClass("d-none");
-})
+})})
+});
