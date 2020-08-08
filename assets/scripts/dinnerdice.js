@@ -16,8 +16,6 @@ var mealVegetarian = document.querySelector("#radioVegetarian");
 var foodBtn = document.querySelector("#btnFood");
 var drinkBtn = document.querySelector("#btnDrink");
 
-var drinkResults = document.querySelector("#drinkResults");
-
 var option = "";
 drinkBtn.addEventListener("click", function () {
 

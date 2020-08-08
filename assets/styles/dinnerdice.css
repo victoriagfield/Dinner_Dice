@@ -1,7 +1,7 @@
 /*body for both pages*/
 body{
-  background: white;
-  background-image: url(../images/shutterstock_740473780.jpg);
+  background: #f1eef1;
+  /* background-image: url(../images/shutterstock_740473780.jpg); */
   
 }
 
@@ -171,6 +171,15 @@ h1{
   animation: rotation 1.5s infinite linear;
 }
 
+/* Animation for Enter Btn */
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+}}
+
 .logoImage{
   padding: 35px;
   display: block;
@@ -196,16 +205,27 @@ h1{
 
 /*media section for max width 770px*/
 @media screen and (max-width: 1050px) {
+  .cardFood-w-75{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+  }
   .card-w-75{
-    margin-top: 95px;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .cardDrink-w-75{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .card2-w-75{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+  }
+  .modal-content{
+    margin-top: 75px;
   }
 }
-
-/* Animation for Enter Btn */
-@keyframes rotation {
-from {
-    transform: rotate(0deg);
-}
-to {
-    transform: rotate(359deg);
-}}
