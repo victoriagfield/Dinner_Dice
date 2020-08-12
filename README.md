@@ -1,4 +1,5 @@
-# Dinner Dice
+![dinnerDice](https://user-images.githubusercontent.com/66035385/89961989-68dba000-dc11-11ea-93fd-3568adc504a2.png)
+  
 https://victoriagfield.github.io/Dinner_Dice
 
 ### Objective: 
@@ -24,11 +25,21 @@ THEN I receive a completely random dining option <br>
 ![modal](https://user-images.githubusercontent.com/66035385/89718307-8f88a500-d98b-11ea-991b-5b23966d9bf5.jpg)
 
 
+##### Technologies Used:
+•Bootstrap<br>
+•JavaScript<br>
+•jQuery
+
+##### API's Used:
+•https://www.thecocktaildb.com<br>
+•https://www.themealdb.com
+
+
 ##### Developers:
-Alex Varela - Front End <br>
-Victoria Greenfield - Front End <br>
-Sean Cummings - Back End <br>
-Jake Beeson - Back End <br>
+•Alex Varela - Front End (https://github.com/Fatmoogle)<br>
+•Victoria Greenfield - Front End <br>
+•Sean Cummings - Back End (https://github.com/SeanPCummings) <br>
+•Jake Beeson - Back End(https://github.com/jpbeeson) <br>
 
 ##### Resources: 
-https://stackoverflow.com/, https://developer.mozilla.org/en-US/docs/Learn, https://www.w3schools.com/, https://www.thecocktaildb.com/, https://www.themealdb.com/
+https://stackoverflow.com/, https://developer.mozilla.org/en-US/docs/Learn, https://www.w3schools.com/, https://getbootstrap.com/, https://fontawesome.bootstrapcheatsheets.com/, https://fonts.google.com/, http://www.viewportemulator.com/
