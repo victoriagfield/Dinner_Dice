@@ -33,6 +33,7 @@ h1{
   color: #c12026;
   overflow: none;
   font-family: 'Red Rose', cursive;
+  word-break: break-all;
 }
 
 /*styling for the food options card*/
