@@ -24,6 +24,9 @@ THEN I receive a completely random dining option <br>
 ![results](https://user-images.githubusercontent.com/66035385/89718306-8e577800-d98b-11ea-804b-cdf0e8a07d06.jpg)
 ![modal](https://user-images.githubusercontent.com/66035385/89718307-8f88a500-d98b-11ea-991b-5b23966d9bf5.jpg)
 
+### Demo:
+![dinner_dice](https://user-images.githubusercontent.com/66035385/89963135-d50bd300-dc14-11ea-858a-caad4f05d6b1.gif)
+
 
 ##### Technologies Used:
 •Bootstrap<br>
