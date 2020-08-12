@@ -37,7 +37,7 @@ THEN I receive a completely random dining option <br>
 
 ##### Developers:
 •Alex Varela - Front End (https://github.com/Fatmoogle)<br>
-•Victoria Greenfield - Front End <br>
+•Victoria Greenfield - Front End (https://github.com/victoriagfield) <br>
 •Sean Cummings - Back End (https://github.com/SeanPCummings) <br>
 •Jake Beeson - Back End(https://github.com/jpbeeson) <br>
 
